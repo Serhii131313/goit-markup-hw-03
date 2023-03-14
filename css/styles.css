@@ -359,6 +359,7 @@ address {
   border-radius: 4px;
   cursor: pointer;
   display: flex;
+  padding: 12px 24px;
 }
 
 .section__button:hover,
