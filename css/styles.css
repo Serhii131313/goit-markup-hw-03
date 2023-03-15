@@ -4,7 +4,7 @@
   --color-text: #2e2f42;
   --seconari-text-color: #434455;
   --portfolio-button-bg-hover-color: #404bbf;
-  --head-buttum-fon-color: #e7e9fc;
+  --head-buttun-fon-color: #e7e9fc;
   --bg-color-fon-team: #f4f4fd;
   --fotter-text: #e7e9fc;
 }
@@ -57,33 +57,51 @@ img {
 }
 
 /* Свойства для обнуления курсива у address */
-
 address {
   font-style: normal;
 }
+
+/* Утіліти */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section {
-  padding: 120px 0 120px 0;
+  padding: 96px 0 120px 0;
 }
 
 .link {
   text-decoration: none;
 }
-/* First Page (heder)*/
-/* navigation */
+
 .list {
   list-style: none;
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--head-buttum-fon-color #e7e9fc);
-}
 .container {
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+/* First Page (heder)*/
+/* navigation */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--head-buttun-fon-color);
 }
 
 .header__container {
@@ -109,7 +127,6 @@ address {
 }
 .header__navigation-list {
   display: flex;
-  margin-right: 332px;
   gap: 40px;
 }
 
@@ -130,6 +147,7 @@ address {
 /* adress section */
 
 .header__address {
+  margin-left: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -205,7 +223,8 @@ address {
   gap: 24px;
 }
 .privilage__item {
-  width: 264px;
+  width: calc(100% - 30px / 4);
+  /* width: 264px; */
 }
 .privilage__title {
   font-weight: 500;
@@ -244,8 +263,8 @@ address {
   display: block;
 }
 
-.section__what-photo {
-}
+/* .section__what-photo {
+} */
 
 /* section Team */
 .section__team {
@@ -332,19 +351,22 @@ address {
 
 /* Portfolio page */
 
-.section-title {
-  visibility: hidden;
+/* .section-title {
+} */
+
+.visually-hidden {
+  overflow: hidden;
 }
+
 .section__button-list {
   display: flex;
   gap: 24px;
-  margin-top: 96px;
   margin-bottom: 72px;
   justify-content: center;
 }
 
-.section__button-item {
-}
+/* .section__button-item {
+} */
 
 .section__button {
   font-family: 'Roboto', sans-serif;
@@ -379,8 +401,8 @@ address {
   width: 360px;
 }
 
-.portfolio__section-link {
-}
+/* .portfolio__section-link {
+} */
 .portfolio__section-photo {
   display: block;
 }
@@ -392,9 +414,9 @@ address {
   color: var(--color-text);
 }
 .border {
-  border-left: 1px solid var(--fotter-text--);
-  border-right: 1px solid var(--fotter-text--);
-  border-bottom: 1px solid var(--fotter-text--);
+  border-left: 1px solid var(--fotter-text);
+  border-right: 1px solid var(--fotter-text);
+  border-bottom: 1px solid var(--fotter-text);
   padding: 32px 16px;
 }
 
