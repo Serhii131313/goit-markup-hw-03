@@ -25,7 +25,7 @@ body {
   box-sizing: inherit;
 }
 
-/* Стили для обнуления верхних отступов у элементов */
+/* СТИЛІ ДЛЯ ОБНУЛЕННЯ ВЕРХНІХ ВІДСТУПІВ У ЕЛЕМЕНТІВ  */
 h1,
 h2,
 h3,
@@ -36,32 +36,32 @@ p {
   margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у списков (ul) */
+/* КЛАС ДЛЯ ОБНУЛЕННЯ БАЗОВИХ ВЛАСТИВОСТЕЙ У СПИСКІВ (ul) */
 ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у ссылок */
+/* КЛАСС ДЛЯ ОБНУЛЕННЯ БАЗОВИХ ВЛАСТИВОСТЕЙ У ПОСИЛАНЬ */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Свойства для корректного отображения картинок */
+/* ВЛАСТИВОСТІ ДЛЯ КОРЕКТНОГО ВІДОБРАЖЕННЯ КАРТИНОК */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Свойства для обнуления курсива у address */
+/* ВЛАСТИВОСТІ ДЛЯ ОБНУЛЕННЯ КУРСИВА У ADDRESS */
 address {
   font-style: normal;
 }
 
-/* Утіліти */
+/* УТІТЛИ */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -139,7 +139,7 @@ address {
   border-radius: 2px;
 }
 
-/* adress section */
+/* ADDRESS SECTION */
 
 .header__address {
   margin-left: auto;
@@ -203,14 +203,14 @@ address {
   background-color: var(--portfolio-button-bg-hover-color);
 }
 
-/* privilage section */
+/* PRIVILAGE SECTION */
 .privilage__list {
   display: flex;
   gap: 24px;
 }
 
 .privilage__item {
-  width: calc(100% - 30px / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .privilage__title {
@@ -227,7 +227,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
 }
-/*section what */
+/*SECTION WHAT */
 
 .what {
   padding-top: 0;
@@ -254,7 +254,7 @@ address {
 /* .section__what-photo {
 } */
 
-/* section Team */
+/* SECTION TEAM */
 .section__team {
   background-color: var(--bg-color-fon-team);
 }
@@ -306,37 +306,6 @@ address {
   color: var(--seconari-text-color);
 }
 
-/* FOOTER SECTION */
-
-.footer {
-  background-color: var(--color-text);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.lo__go-link {
-  display: block;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--logo-color-top);
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.footer-logo {
-  color: var(--bg-color-fon-team);
-}
-.footer-text {
-  width: 264px;
-  color: var(--color-e7e9fc);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--fotter-text);
-}
-
 /* Portfolio page */
 .portfolio__section {
   padding-top: 96px;
@@ -363,7 +332,7 @@ address {
   letter-spacing: 0.04em;
   background-color: var(--bg-color-fon-team);
   color: var(--logo-color-top);
-  border: var(--fotter-text);
+  border: 1px solid var(--fotter-text);
   border-radius: 4px;
   cursor: pointer;
   display: flex;
@@ -414,4 +383,34 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
+}
+/* FOOTER SECTION */
+
+.footer {
+  background-color: var(--color-text);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.lo__go-link {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-top);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  color: var(--bg-color-fon-team);
+}
+.footer-text {
+  width: 264px;
+  color: var(--color-e7e9fc);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--fotter-text);
 }
