@@ -343,6 +343,7 @@ address {
 .section__button:focus {
   color: var(--bg-color);
   background-color: var(--portfolio-button-bg-hover-color);
+  border: transparent;
 }
 .portfolio__section-list {
   list-style: none;
