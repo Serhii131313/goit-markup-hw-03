@@ -77,15 +77,7 @@ address {
 }
 
 .section {
-  padding: 96px 0 120px 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
+  padding: 120px 0;
 }
 
 .container {
@@ -95,9 +87,9 @@ address {
   margin: 0 auto;
 }
 
-/* First Page (heder)*/
-/* navigation */
+/* My css */
 
+/* HEADER SECTION */
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -111,6 +103,7 @@ address {
 .header__navigation {
   display: flex;
 }
+
 .header__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -125,6 +118,7 @@ address {
 .header__span {
   color: var(--color-text);
 }
+
 .header__navigation-list {
   display: flex;
   gap: 40px;
@@ -137,6 +131,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--color-text);
 }
+
 .header__navigation-link:hover,
 .header__navigation-link:focus {
   color: var(--portfolio-button-bg-hover-color);
@@ -163,13 +158,13 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .header__adress-link:hover,
 .header__adress-link:focus {
   color: var(--portfolio-button-bg-hover-color);
 }
 
 /* HERO SECTION */
-
 .hero {
   background-color: var(--color-text);
   padding: 188px 0;
@@ -202,30 +197,22 @@ address {
   display: block;
   margin: 0 auto;
 }
+
 .hero__button:hover,
 .hero__button:focus {
   background-color: var(--portfolio-button-bg-hover-color);
 }
 
 /* privilage section */
-
-.section__privilage {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.visually-hidden {
-  visibility: hidden;
-  color: #2e2f42;
-}
-
 .privilage__list {
   display: flex;
   gap: 24px;
 }
+
 .privilage__item {
   width: calc(100% - 30px / 4);
-  /* width: 264px; */
 }
+
 .privilage__title {
   font-weight: 500;
   font-size: 20px;
@@ -234,6 +221,7 @@ address {
   color: var(--color-text);
   margin-bottom: 8px;
 }
+
 .privilage__text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -350,13 +338,11 @@ address {
 }
 
 /* Portfolio page */
-
+.portfolio__section {
+  padding-top: 96px;
+}
 /* .section-title {
 } */
-
-.visually-hidden {
-  overflow: hidden;
-}
 
 .section__button-list {
   display: flex;
